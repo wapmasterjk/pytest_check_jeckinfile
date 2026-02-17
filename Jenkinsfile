@@ -7,7 +7,9 @@ pipeline{
             }
         }
         stage('Setup Python'){
+            steps{
             sh 'python -m venv .venv'
+            }
         }
         stage('Install dependencies') {
             steps{
