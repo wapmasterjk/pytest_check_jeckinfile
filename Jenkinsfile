@@ -13,9 +13,10 @@ pipeline{
         }
         stage('Install dependencies') {
             steps{
-                sh ""
+                sh '
                 .venv/Script/activate
-                pip install -r requirements.txt""
+                pip install -r requirements.txt
+                '
             }
         }
         stage('Run Test'){
