@@ -1,0 +1,7 @@
+pytest
+selenium
+allure-pytest
+python-dotenv
+click
+webdriver-manager
+pytest-html
